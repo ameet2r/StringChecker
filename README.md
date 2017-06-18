@@ -5,9 +5,9 @@
 </p>
 
 <!--Grab maze width and height from user-->
-Maze Width: <input type="text" name="string1" value="5" id="string1">
+String one: <input type="text" name="string1" value="5" id="string1">
 <br>
-Maze Height: <input type="text" name="string2" value="5" id="string2">
+String two: <input type="text" name="string2" value="5" id="string2">
 <br>
 <input id="submitButton" type="submit" value="Submit" onclick="checkStrings()">
 
