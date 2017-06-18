@@ -1,5 +1,3 @@
-## String Checker
-
 <p>
     Please input the two strings you want to double check:
 </p>
