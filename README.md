@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## String Checker
 
-You can use the [editor on GitHub](https://github.com/ameet2r/StringChecker/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<h1>String Checker</h1>
 
-```markdown
-Syntax highlighted code block
+<p>
+    Please input the two strings you want to double check:
+</p>
 
-# Header 1
-## Header 2
-### Header 3
+<!--Grab maze width and height from user-->
+Maze Width: <input type="text" name="string1" value="5" id="string1">
+<br>
+Maze Height: <input type="text" name="string2" value="5" id="string2">
+<br>
+<input id="submitButton" type="submit" value="Submit" onclick="checkStrings()">
 
-- Bulleted
-- List
+<p id="output">Result: </p>
 
-1. Numbered
-2. List
+<script>
+    function checkStrings() {
+        var string1 = document.getElementById("string1").value;
+        var string2 = document.getElementById("string2").value;
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ameet2r/StringChecker/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+        if(string1 === string2) {
+            document.getElementById("output").innerHTML = "Result: both strings are the same";
+        } else {
+            document.getElementById("output").innerHTML = "Result: the strings are not the same";
+        }
+    }
+</script>
