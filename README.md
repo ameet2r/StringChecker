@@ -19,6 +19,12 @@ Ignore case: <input id="ignoreCaseCheckBox" type="checkbox">
     function checkStrings() {
         var string1 = document.getElementById("string1").value;
         var string2 = document.getElementById("string2").value;
+        var ignoreCase = document.getElementById("ignoreCaseCheckBox").checked === true;
+        
+        if(ignoreCase){
+            string1 = string1.toUpperCase();
+            string2 = string2.toUpperCase();
+        }
 
         if(string1 === string2) {
             document.getElementById("output").innerHTML = "Result: both strings are the same";
