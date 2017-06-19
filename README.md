@@ -22,6 +22,7 @@ Ignore case: <input id="ignoreCaseCheckBox" type="checkbox">
         var ignoreCase = document.getElementById("ignoreCaseCheckBox").checked === true;
         
         if(ignoreCase){
+            console.log("ignoreCase true");
             string1 = string1.toUpperCase();
             string2 = string2.toUpperCase();
         }
