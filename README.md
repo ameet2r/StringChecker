@@ -2,7 +2,7 @@
     Please input the two strings you want to double check:
 </p>
 
-<!--Grab maze width and height from user-->
+
 String one: <input type="text" name="string1" value="5" id="string1">
 <br>
 String two: <input type="text" name="string2" value="5" id="string2">
